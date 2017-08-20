@@ -10,14 +10,14 @@ To use this class you must:
 $faker = new FakeSQLArticle;
 
 $faker->tableName('articles')
-	  ->titleColumn('title')
-	  ->articleColumn('content')
-	  ->authorColumn('author')
+      ->titleColumn('title')
+      ->articleColumn('content')
+      ->authorColumn('author')
       ->dateColumn('date_time')
       ->numberOfArticle(20)
       ->lengthSingleArticle(20)
       ->executeFaker();
-      //->clearFaker();
+    //->clearFaker();
 ```
 # Methods description
 
