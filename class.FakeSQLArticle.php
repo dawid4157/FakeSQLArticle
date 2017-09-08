@@ -118,7 +118,6 @@ class FakeSQLArticle extends Database
 			$this->names = file('names.txt'); # Names from: https://gist.github.com/subodhghulaxe/8148971
 			$this->titleColumn = file('titles.txt');
 			$randTitle = $this->titleColumn[array_rand($this->titleColumn)];
-			//var_dump($this->title);
 			$dateTime = mt_rand(1, time());
 			$randDate = date("Y-m-d H:i:s", $dateTime);
 			$randfakeNews = $this->fakeNews[array_rand($this->fakeNews)]; # Random fake fakeNews
